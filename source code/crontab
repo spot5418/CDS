@@ -1,0 +1,10 @@
+#ndis
+#*/1 * * * * python /root/ndis/nfanalyzer/detect.py > /dev/null 2>&1
+#*/1 * * * * python /root/ndis/nfanalyzer/monitor.py > /dev/null 2>&1
+#*/5 * * * * python /root/ndis/nfanalyzer/plots.py > /dev/null 2>&1
+#*/5 * * * * python /root/ndis/nfanalyzer/traffic.py > /dev/null 2>&1
+#5 */1 * * * python /root/ndis/nfanalyzer/detect_spam.py > /dev/null 2>&1
+#5 */1 * * * python /root/ndis/nfanalyzer/detectDRDoS.py > /dev/null 2>&1
+#10 0 * * * python /root/ndis/nfanalyzer/daily_report.py > /dev/null 2>&1
+
+#*/5 * * * * python /root/ndis/events.py > /dev/null 2>&1

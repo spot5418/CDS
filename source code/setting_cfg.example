@@ -1,0 +1,22 @@
+[local]
+host = localhost
+user = dbuser
+password = dbpass
+database = netflow_system
+
+[remote]
+host = localhost
+user = dbuser
+password = dbpass
+database = dbname
+
+[path]
+nfs_dir = /nfs/dir/
+report_dir = /report/dir/
+netlist = /path/to/netlist
+netlist_v6 = /path/to/netlist_v6
+anomaly_log = /path/to/nfanalyzer/anomaly_log
+
+[others]
+ignore_net = 224.0.0.0/3,10.0.0.0/8
+ignore_dns = 8.8.8.8,8.8.4.4,140.116.49.7,140.116.4.8,168.95.1.1,168.95.192.1,163.28.112.1,163.28.113.1
